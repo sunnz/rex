@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between pt-24 pb-16 px-16">
+    <main className="flex flex-col items-center justify-between pt-24 pb-16 px-16 md:mx-32">
       <h1 className="mb-3 text-2xl font-semibold">full-stack sunny</h1>
       <p>
         Hello there! My name is <strong>Sunny Yiu</strong>, I am a{" "}

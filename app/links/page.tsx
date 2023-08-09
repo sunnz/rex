@@ -3,7 +3,7 @@ import { ExternalLink } from "../components/ExternalLink";
 
 export default function Links() {
   return (
-    <main className="flex flex-col pt-24 pb-16 px-16">
+    <main className="flex flex-col pt-24 pb-16 px-16 md:mx-32">
       <h1 className="mb-3 text-2xl font-semibold items-center text-center">
         links
       </h1>
