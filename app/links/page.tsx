@@ -20,9 +20,10 @@ export default function Links() {
         </li>
         <li>home page: you are already here 😉</li>
         <li>
-          note: I don&apos;t have accounts for facebook, <s>twitter</s> X,
-          instagram, whatsapp, or wechat. if you find my name from those places,
-          you can assume they are someone else with the same name, ie, not me
+          note: only trust accounts listed here. I don&apos;t have accounts on
+          facebook, <s>twitter</s> X, instagram, whatsapp, or wechat. if you
+          find my name from those places, you can assume they are not me, eg,
+          someone else using the same name
         </li>
       </ul>
       <p>
