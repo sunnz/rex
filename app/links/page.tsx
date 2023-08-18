@@ -1,5 +1,10 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import { ExternalLink } from "../components/ExternalLink";
+
+export const metadata: Metadata = {
+  title: "links",
+};
 
 export default function Links() {
   return (

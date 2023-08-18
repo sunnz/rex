@@ -1,3 +1,9 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "full-stack sunny",
+};
+
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between pt-24 pb-16 px-16 md:mx-32">
