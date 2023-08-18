@@ -12,20 +12,20 @@ export default function Home() {
         Hello there! My name is <strong>Sunny Yiu</strong>, I am a{" "}
         <strong>full-stack developer</strong> from{" "}
         <strong>Melbourne, Australia</strong>, working with{" "}
-        <strong>NextJS, NodeJS, GraphQL, Apollo, AWS, and Terraform</strong>{" "}
+        <strong>
+          TypeScript, NextJS, NodeJS, GraphQL, Apollo, AWS, and Terraform
+        </strong>{" "}
         with the brightest team in the world.
       </p>
       <p>
-        I am fond of modern TypeScript, infrastructure as code, object-oriented
-        and functional programming, computer science, applied cryptography,
-        security, networking, and cloud computing.
+        I am fond of modern TypeScript, infrastructure as code, functional
+        programming and cryptography.
       </p>
       <p>
-        Although I am a fast learner and have expertise in a number of technical
-        areas, I believe that <strong>life is a marathon</strong>, not a race.
-        I&rsquo;d enjoy living, work, and learn at a steady pace indefinitely. I
-        enjoy a cup of coffee like most developers.{" "}
-        <del>Except I like it decaffeinated.</del> 😌☕️
+        I am a fast learner, however I believe that{" "}
+        <strong>life is a marathon</strong>, not a race. Learning at a steady
+        pace indefinitely gets you much further than rushing everything through.
+        Over all, I enjoy a cup of coffee like most developers. 😌☕️
       </p>
     </main>
   );
