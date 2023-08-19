@@ -26,8 +26,8 @@ export default function Home() {
       <p>
         I am a fast learner, however I believe that{" "}
         <strong>life is a marathon</strong>, not a race. Learning at a steady
-        pace indefinitely gets you much further than rushing everything through.
-        Over all, I enjoy a cup of coffee like most developers. 😌☕️
+        pace indefinitely gets you much further than rushing through. Over all,
+        I enjoy a cup of coffee like most developers. 😌☕️
       </p>
     </main>
   );

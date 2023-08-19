@@ -4,7 +4,7 @@ interface Prop {
 }
 
 export const ExternalLink: React.FC<Prop> = ({ href, children }) => (
-  <a href={href} target="_blank" rel="noopener">
+  <a href={href} target="_blank" rel="noopener" className="break-words">
     {children ?? href}
   </a>
 );
