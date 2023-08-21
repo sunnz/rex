@@ -1,12 +1,6 @@
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "full-stack sunny",
-};
-
 export default function Home() {
   return (
-    <main className="flex flex-col justify-between pt-24 pb-16 px-16 md:mx-32">
+    <>
       <h1 className="mb-3 text-2xl text-center font-semibold">
         full-stack sunny
       </h1>
@@ -29,6 +23,6 @@ export default function Home() {
         pace indefinitely gets you much further than rushing through. Over all,
         I enjoy a cup of coffee like most developers. 😌☕️
       </p>
-    </main>
+    </>
   );
 }

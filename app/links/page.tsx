@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Links() {
   return (
-    <main className="flex flex-col pt-24 pb-16 px-16 md:mx-32">
+    <>
       <h1 className="mb-3 text-2xl font-semibold items-center text-center">
         links
       </h1>
@@ -294,6 +294,6 @@ export default function Links() {
           </ul>
         </li>
       </ul>
-    </main>
+    </>
   );
 }
