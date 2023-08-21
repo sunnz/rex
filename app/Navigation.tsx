@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 function Item({ href, text }: { href: string; text: string }) {
   const pathname = usePathname();
-  const className = pathname === href ? "border-b border-b-slate-400" : null;
+  const className = pathname === href ? "border-b border-b-slate-400" : "";
   return (
     <li>
       <Link href={href} className={className}>
