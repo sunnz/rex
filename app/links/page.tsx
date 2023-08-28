@@ -21,7 +21,7 @@ export default function Links() {
           GitHub: <ExternalLink href="https://github.com/sunnz" />
         </li>
         <li>
-          mastondon: <ExternalLink href="https://infosec.exchange/@sunnz" />
+          mastodon: <ExternalLink href="https://infosec.exchange/@sunnz" />
         </li>
         <li>home page: you are already here 😉</li>
         <li>
