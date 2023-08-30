@@ -1,12 +1,14 @@
 {
-  "name": "workspace",
-  "version": "0.1.0",
+  "name": "rex",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint && eslint app cypress",
+    "prettier:write": "prettier --write app cypress",
+    "cypress:open": "cypress open",
     "ncu": "ncu -i",
     "ncu:check": "ncu -x npm-check-updates",
     "ncu:update": "ncu -u -x npm-check-updates"
@@ -26,6 +28,10 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "npm-check-updates": "16.10.19"
+    "cypress": "12.17.4",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-prettier": "5.0.0",
+    "npm-check-updates": "16.10.19",
+    "prettier": "3.0.3"
   }
 }

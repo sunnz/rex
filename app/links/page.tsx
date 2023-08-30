@@ -13,7 +13,7 @@ export default function Links() {
         links
       </h1>
       <p>🕸️ Where I hang out in the interwebs</p>
-      <ul>
+      <ul data-cy="sns">
         <li>
           LinkedIn: <ExternalLink href="https://linkedin.com/in/sunyiu/" />
         </li>
