@@ -1,0 +1,24 @@
+name: Cypress Tests
+on: push
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.8.1
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v6.6.1
+        with:
+          build: npm run build
+          start: npm start
+          wait-on: "http://localhost:3000"
+          #browser: firefox # as of cypress github action v6.6.1, defining firefox here gives: "Warning: We failed capturing this video"
+        env:
+          # pass GitHub token (created by the GH Action automatically) to detect new build vs re-run build
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
