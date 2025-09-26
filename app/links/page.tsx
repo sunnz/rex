@@ -164,6 +164,14 @@ export default function Links() {
           </ul>
         </li>
         <li>
+          LinkedIn - AI setting:
+          <ul>
+            <li>
+              <ExternalLink href="https://www.linkedin.com/mypreferences/d/settings/data-for-ai-improvement" />
+            </li>
+          </ul>
+        </li>
+        <li>
           Markdown
           <ul>
             <li>
