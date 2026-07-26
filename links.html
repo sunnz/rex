@@ -10,15 +10,16 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/styles.css">
 <script src="https://unpkg.com/htmx.org@2.0.10"></script>
+<script src="https://unpkg.com/htmx-ext-preload@2.1.2"></script>
 </head>
-<body hx-boost="true" class="bg-terminal-bg selection:bg-selection-bg selection:text-selection-fg">
+<body hx-boost="true" hx-ext="preload" class="bg-terminal-bg selection:bg-selection-bg selection:text-selection-fg">
 <div class="min-h-screen flex justify-center px-6 py-16 bg-terminal-bg text-fg font-mono">
   <div class="w-full max-w-[720px]">
 
     <div class="flex items-baseline justify-between mb-10 flex-wrap gap-3">
       <div class="text-[15px] text-muted"><span class="text-green">sun</span>@<span class="text-green">yiu</span>.co <span class="text-muted-2">~%</span></div>
       <nav class="flex gap-1">
-        <a href="/" class="tab">about</a>
+        <a href="/" class="tab" preload="preload:init">about</a>
         <a href="/links" class="tab active">links</a>
       </nav>
     </div>
