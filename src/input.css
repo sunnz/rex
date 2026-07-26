@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  /* terminal design tokens — ported 1:1 from the original theme's hex values */
+  --color-terminal-bg: #0b0d0f;
+  --color-fg: #d3d8d6;
+  --color-heading: #eef1ef;
+  --color-body: #b6bcb9;
+  --color-muted: #6b7570;
+  --color-muted-2: #454d49;
+  --color-tab-inactive: #8a938e;
+  --color-green: #3fb950;
+  --color-chip-fg: #9fe6ac;
+  --color-chip-border: #232825;
+  --color-chip-bg: #10221480;
+  --color-border: #1a1e1c;
+  --color-link: #7fb8e6;
+  --color-link-hover: #a9d4f4;
+  --color-warn: #d9a441;
+  --color-warn-bg: #2a220e;
+  --color-warn-border: #4a3a12;
+  --color-label: #565f5a;
+  --color-selection-bg: #3fb95044;
+  --color-selection-fg: #eafff0;
+
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --animate-blink: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@layer components {
+  .tab {
+    @apply inline-block rounded px-2.5 py-1 text-[13px] text-tab-inactive font-mono no-underline;
+  }
+  .tab.active {
+    @apply text-terminal-bg bg-green;
+  }
+
+  .chip {
+    @apply text-[13px] px-2.5 py-[5px] border border-chip-border rounded text-chip-fg bg-chip-bg;
+  }
+
+  .dot {
+    @apply inline-block w-[7px] h-[7px] rounded-full bg-green;
+  }
+
+  .link-list {
+    @apply flex flex-col gap-1.5;
+  }
+  .link-list a {
+    @apply text-link text-sm no-underline;
+  }
+  .link-list a:hover {
+    @apply text-link-hover;
+  }
+}
