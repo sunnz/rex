@@ -19,6 +19,10 @@
   --color-warn: #d9a441;
   --color-warn-bg: #2a220e;
   --color-warn-border: #4a3a12;
+  --color-success: #b8e8c2;
+  --color-success-bg: #0f1a12;
+  --color-success-border: #2c5c37;
+  --color-success-accent: #6ede7f;
   --color-label: #565f5a;
   --color-selection-bg: #3fb95044;
   --color-selection-fg: #eafff0;
