@@ -38,6 +38,8 @@ jobs:
           mkdir -p _site/links _site/assets
           cp index.html _site/index.html
           cp links.html _site/links/index.html
+          cp favicon.ico _site/favicon.ico
+          cp favicon.svg _site/favicon.svg
           cp assets/styles.css _site/assets/styles.css
           cp CNAME _site/CNAME
 
