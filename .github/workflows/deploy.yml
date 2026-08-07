@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build CSS
+      - name: Build
         run: npm run build
 
       - name: Assemble site
@@ -41,6 +41,7 @@ jobs:
           cp favicon.ico _site/favicon.ico
           cp favicon.svg _site/favicon.svg
           cp assets/styles.css _site/assets/styles.css
+          cp assets/htmx.bundle.js _site/assets/htmx.bundle.js
           cp CNAME _site/CNAME
 
       - name: Upload artifact

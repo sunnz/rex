@@ -3,11 +3,20 @@
   "private": true,
   "version": "0.2.0",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./assets/styles.css --minify",
-    "dev": "tailwindcss -i ./src/input.css -o ./assets/styles.css --watch"
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/styles.css --minify",
+    "build:js": "webpack --mode production",
+    "dev:css": "tailwindcss -i ./src/input.css -o ./assets/styles.css --watch",
+    "dev:js": "webpack --mode development --watch"
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.3.3",
-    "tailwindcss": "^4.3.3"
+    "@tailwindcss/cli": "4.3.3",
+    "tailwindcss": "4.3.3",
+    "webpack": "5.109.2",
+    "webpack-cli": "7.2.2"
+  },
+  "dependencies": {
+    "htmx-ext-preload": "2.1.2",
+    "htmx.org": "2.0.10"
   }
 }
